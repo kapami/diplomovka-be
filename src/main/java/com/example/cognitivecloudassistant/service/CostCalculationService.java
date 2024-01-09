@@ -1,26 +1,45 @@
 package com.example.cognitivecloudassistant.service;
 
-import com.example.cognitivecloudassistant.dto.PayloadRootDTO;
-import com.example.cognitivecloudassistant.dto.ResourceDetailsDTO;
+import com.example.cognitivecloudassistant.dto.PayloadDTO;
+import com.example.cognitivecloudassistant.dto.PayloadItemDTO;
+import com.example.cognitivecloudassistant.dto.ResponseItemDTO;
+import com.example.cognitivecloudassistant.exception.UnrecognizedCloudProviderException;
+import com.example.cognitivecloudassistant.util.DTOConverter;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class CostCalculationService {
 
-    public PayloadRootDTO calculateCosts(PayloadRootDTO payloadRootDTO) {
-        Map<String, ResourceDetailsDTO> resources = payloadRootDTO.getResources();
+    @Autowired
+    private AwsCostCalculationService awsCostCalculationService;
 
-        // Simulating a basic price calculation for each resource (replace with actual logic)
-        double basePrice = 10.0;
-        for (Map.Entry<String, ResourceDetailsDTO> entry : resources.entrySet()) {
-            ResourceDetailsDTO resourceDetails = entry.getValue();
-            resourceDetails.setPrice(basePrice); // Set a price for each resource
-            basePrice += 5.0; // Increment the price for demonstration purposes
+    @Autowired
+    private AzureCostCalculationService azureCostCalculationService;
+
+
+    public List<ResponseItemDTO> calculateCosts(PayloadDTO payloadRootDTO) throws UnrecognizedCloudProviderException {
+        List<ResponseItemDTO> responseList = new ArrayList<>();
+        ResponseItemDTO responseItemDTO;
+
+        for(PayloadItemDTO payloadItemDTO : payloadRootDTO.getResources()){
+            responseItemDTO = DTOConverter.convertPayloadItemToResponseItem(payloadItemDTO);
+            switch (responseItemDTO.getProvider().toUpperCase()) {
+                case "AWS":
+                    awsCostCalculationService.calculateCosts(responseItemDTO);
+                    break;
+                case "AZURE":
+                    azureCostCalculationService.calculateCosts(responseItemDTO);
+                    break;
+                default:
+                    throw new UnrecognizedCloudProviderException(responseItemDTO.getProvider() + "cloud provider is not supported");
+            }
+            responseList.add(responseItemDTO);
         }
 
-
-        return payloadRootDTO; // Return the updated template with prices
+        return responseList;
     }
 }
