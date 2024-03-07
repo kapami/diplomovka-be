@@ -1,0 +1,472 @@
+{
+    "aws":{
+        "compute":[
+            "AWS Amplify",
+            "Amazon EC2",
+            "Amazon EC2 Bare Metal Instance",
+            "VMC on AWS",
+            "Amazon EC2 Dedicated Hosts",
+            "AWS Nitro Enclaves",
+            "High Performance Computing",
+            "AWS ParallelCluster",
+            "Elastic Fabric Adapter",
+            "NICE DCV",
+            "Amazon Elastic Container Registry",
+            "Amazon Elastic Container Service",
+            "Amazon Elastic Kubernetes Service",
+            "Red Hat Openshift on AWS",
+            "Bottlerocket",
+            "AWS Fargate",
+            "AWS Proton",
+            "AWS App Runner",
+            "AWS Lambda",
+            "AWS Serverless Application Repository",
+            "Amazon Lightsail",
+            "Auto Scaling",
+            "AWS Batch",
+            "AWS Elastic Beanstalk",
+            "AWS Lambda"
+        ],
+        "storage":[
+            "Amazon Simple Storage Service",
+            "Amazon Elastic Block Storage",
+            "Amazon Elastic File System",
+            "Amazon FSx for Windows File Server",
+            "Amazon FSx for Lustre",
+            "Amazon FSx for NetApp ONTAP ",
+            "Amazon FSx for OpenZFS",
+            "Amazon S3 Glacier",
+            "AWS Storage Gateway"
+        ],
+        "database":[
+            "Amazon Aurora",
+            "Amazon RDS",
+            "Amazon DynamoDB",
+            "Amazon DynamoDB Accelerator",
+            "Amazon DocumentDB",
+            "Amazon Keyspaces",
+            "Amazon Timestream",
+            "Amazon Neptune",
+            "Amazon ElastiCache",
+            "Amazon MemoryDB for Redis",
+            "Amazon Redshift"
+        ],
+        "migration_services":[
+            "AWS Database Migration Service",
+            "AWS Migration Hub",
+            "AWS Server Migration Service",
+            "AWS Application Migration Service",
+            "AWS Migration Hub",
+            "AWS Snowball",
+            "AWS Transfer Family",
+            "AWS DataSync",
+            "AWS Snowcone",
+            "AWS Snowball Edge Compute Optimized",
+            "AWS DataSync",
+            "AWS Snowmobile"
+        ],
+        "application_discovery_services":[
+            "Application Discovery Service"
+        ],
+        "networking_and_content_delivery":[
+            "Amazon VPC",
+            "AWS Transit Gateway",
+            "AWS VPC peering",
+            "AWS Site-to-Site VPN",
+            "AWS Client VPN",
+            "Amazon CloudFront",
+            "AWS Direct Connect",
+            "AWS Private Link",
+            "Elastic Load Balancing"
+        ],
+        "networking":[
+            "Amazon Route 53",
+            "Amazon Route 53 Traffic Flow",
+            "AWS Global Accelerator",
+            "AWS App Mesh"
+        ],
+        "hybrid_cloud":[
+            "AWS Outposts"
+        ],
+        "developer_tools":[
+            "AWS Cloud9",
+            "AWS Code Star",
+            "AWS CodeCommit",
+            "AWS CodeBuild",
+            "AWS CodeDeploy",
+            "AWS CodePipeline",
+            "AWS X-Ray",
+            "Amazon DevOps Guru",
+            "Amazon CodeGuru",
+            "AWS Fault Injection Simulator",
+            "AWS Tools & SDKs",
+            "AWS Cloud Development Kit"
+        ],
+        "management_tools":[
+            "Amazon EC2 Systems Manager",
+            "AWS CloudFormation",
+            "AWS OpsWorks",
+            "Amazon CloudWatch",
+            "AWS CloudTrail",
+            "AWS X-Ray",
+            "AWS Distro for OpenTelemetry",
+            "Amazon Managed Service for Grafana",
+            "Amazon Managed Service for Prometheus",
+            "AWS Config",
+            "AWS License Manager",
+            "AWS Service Catalog",
+            "AWS Trusted Advisor",
+            "AWS Well-Architected Tool",
+            "AWS Cost Management",
+            "AWS Cost Explorer",
+            "AWS Compute Optimizer",
+            "AWS Personal Health Dashboard",
+            "Amazon CloudWatch",
+            "AWS Security Hub",
+            "AWS Audit Manager",
+            "AWS Command Line Interface",
+            "AWS CloudShell",
+            "AWS Management Console",
+            "AWS Console Mobile Application",
+            "AWS Tools & SDKs",
+            "AWS Managed Services"
+        ],
+        "disaster_recovery_services":[
+            "AWS Disaster Recovery",
+            "AWS Backup"
+        ],
+        "security_and_identity_and_compliance":[
+            "AWS CloudHSM",
+            "AWS Secrets Manager",
+            "AWS Directory Service",
+            "AWS Key Management Service",
+            "AWS Organizations",
+            "AWS Control Tower",
+            "AWS Resource Access Manager",
+            "AWS Shield",
+            "AWS WAF",
+            "AWS Firewall Manager",
+            "AWS Network Firewall",
+            "AWS Artifact",
+            "Amazon Macie"
+        ],
+        "big_data_and_advanced_analytics":[
+            "Amazon Athena",
+            "AWS Lake Formation",
+            "Amazon HealthLake",
+            "Amazon EMR",
+            "Amazon CloudSearch",
+            "Amazon Elastic Search Service",
+            "Amazon Kinesis",
+            "Amazon Kinesis Video Streams",
+            "Amazon Redshift",
+            "Amazon QuickSight",
+            "AWS Data Pipeline",
+            "AWS Glue",
+            "Amazon Simple Workflow Service",
+            "AWS Data Exchange"
+        ],
+        "artificial_intelligence_and_machine_learning":[
+            "Amazon Lex",
+            "Amazon Comprehend",
+            "Amazon Polly",
+            "Amazon Transcribe",
+            "Amazon Translate",
+            "Amazon Rekognition",
+            "Amazon Machine Learning",
+            "Amazon SageMaker",
+            "AWS Neuron",
+            "TensorFlow on AWS",
+            "PyTorch on AWS",
+            "Apache MXNet on AWS",
+            "Amazon Forecast",
+            "Amazon Fraud Detector",
+            "Amazon Lookout for Metrics",
+            "Amazon Augmented AI",
+            "Amazon Personalize",
+            "Amazon Elastic Inference",
+            "Amazon Kendra"
+        ],
+        "mobile_services":[
+            "AWS Mobile Hub",
+            "Amazon API Gateway",
+            "Amazon Cognito",
+            "Amazon Pinpoint",
+            "AWS Device Farm",
+            "AWS Mobile SDK",
+            "AWS Step Functions",
+            "Amazon EventBridge",
+            "Amazon AppFlow",
+            "Amazon Managed Workflows for Apache Airflow",
+            "Amazon Pinpoint"
+        ],
+        "automated_cloud_management_service0":[
+            "AWS Managed Services",
+            "AWS Cloud Map"
+        ],
+        "application_services":[
+            "Amazon API Gateway",
+            "AWS Elemental MediaConnect",
+            "AWS Elemental MediaConvert",
+            "AWS Elemental MediaLive",
+            "AWS Elemental MediaPackage",
+            "AWS Elemental MediaStore",
+            "AWS Elemental MediaTailor",
+            "Amazon Kinesis Video Streams",
+            "AWS Elemental Live",
+            "AWS Elemental Server",
+            "AWS Elemental Conductor",
+            "AWS Elemental Link",
+            "AWS Elemental Delta ",
+            "Amazon Simple Queue Service",
+            "Amazon MQ",
+            "Amazon Pinpoint",
+            "Amazon SES",
+            "Amazon SNS",
+            "Amazon Managed Blockchain",
+            "Amazon Quantum Ledger Database",
+            "Amazon Lex",
+            "AWS Chatbot",
+            "Alexa for Business"
+        ],
+        "business_productivity":[
+            "Amazon WorkDocs",
+            "Amazon WorkMail",
+            "Amazon WorkSpaces",
+            "Amazon WorkLink",
+            "Amazon AppStream 2.0",
+            "NICE DCV",
+            "Amazon Chime",
+            "Amazon Connect"
+        ],
+        "software_marketPlace":[
+            "AWS Marketplace"
+        ],
+        "internet_of_things":[
+            "AWS IoT Platform",
+            "AWS Greengrass",
+            "AWS IoT Button"
+        ],
+        "game_development":[
+            "Amazon Lumberyard"
+        ],
+        "robotics_development":[
+            "AWS RoboMaker"
+        ],
+        "development_and_testing":[
+            "AWS Dev/Test"
+        ]
+    },
+    "azure":{
+        "compute":[
+            "Web Apps",
+            "Azure Virtual Machine",
+            "Azure Bare Metal Servers",
+            "Azure VMware Solution",
+            "Azure Dedicated Host",
+            "Azure High Performance Compute",
+            "Azure Container Registry",
+            "Azure Kubernetes Service",
+            "Azure Container Instances",
+            "Azure Red Hat OpenShift",
+            "Azure Container Instances",
+            "Azure Container Apps",
+            "Azure Container Apps",
+            "Azure Service Fabric",
+            "Azure Functions",
+            "Event Grid",
+            "Azure App Service Environment",
+            "Azure Autoscale",
+            "Virtual Machine Scale Sets",
+            "Azure Batch",
+            "Azure Web Apps",
+            "Azure Cloud Services",
+            "Azure Functions",
+            "Event Grid"
+        ],
+        "storage":[
+            "Azure Blob Storage",
+            "Azure Page Blobs",
+            "Managed Disks",
+            "Azure Files",
+            "Azure NetApp Files",
+            "Azure Archive Storage",
+            "Azure Cool Storage",
+            "Azure Cool Storage"
+        ],
+        "database":[
+            "Azure SQL Database",
+            "SQL Server Stretch Database",
+            "Azure Database for MySQL",
+            "Azure Database for PostgresSQL",
+            "Azure SQL Database Edge",
+            "Azure CosmosDB",
+            "Table Storage",
+            "Azure Time Series Insights",
+            "Azure Cache for Redis",
+            "Azure Synapse Analytics"
+        ],
+        "migration_services":[
+            "Azure Database Migration Service",
+            "Site Recovery",
+            "Azure App Service migration",
+            "Azure Import/Export",
+            "Azure Data Box"
+        ],
+        "application_discovery_services":[
+            "Azure Active Directory"
+        ],
+        "networking_and_content_delivery":[
+            "Azure VNet",
+            "Azure VNet Peering",
+            "Azure VPN Gateway",
+            "Azure CDN",
+            "Azure Front Door",
+            "Azure Express Route",
+            "Azure Load Balancer"
+        ],
+        "networking":[
+            "Azure DNS",
+            "Azure Traffic Manager"
+        ],
+        "hybrid_cloud":[
+            "Azure Arc"
+        ],
+        "developer_tools":[
+            "Azure Boards",
+            "Azure Pipelines",
+            "Azure Repos",
+            "Azure Test Plans",
+            "Azure Artifacts",
+            "Azure SDK Visual Studio"
+        ],
+        "management_tools":[
+            "Azure Operational Insights",
+            "Azure Resource Manager",
+            "Azure Building Blocks",
+            "Log Analytics",
+            "Azure portal",
+            "Application Insights",
+            "Azure portal",
+            "Resource Manager",
+            "Azure Automation",
+            "VM Extentions",
+            "Azure Advisor",
+            "Azure Cost Management",
+            "Azure Monitor",
+            "Azure Operations Management Suite",
+            "Azure Command Line Interface",
+            "Azure Powershell",
+            "Azure Management Console",
+            "Azure Cloud Shell"
+        ],
+        "disaster_recovery_services":[
+            "Azure Site Recovery",
+            "Azure Backup"
+        ],
+        "security_and_identity_and_compliance":[
+            "Azure Active Directory",
+            "Azure Security Center",
+            "App Service Certificate",
+            "Azure Key Vault",
+            "Azure Active Directory B2C",
+            "Azure Active Directory Domain Services",
+            "Azure Active Directory Multi Factor Authentication",
+            "Azure Key Vault",
+            "Azure Management Groups",
+            "Azure DDoS Protection",
+            "Azure WAF",
+            "Azure Firewall Manager",
+            "Azure Security & Compliance"
+        ],
+        "big_data_and_advanced_analytics":[
+            "Azure Data Lake Analytics",
+            "Azure HDInsight",
+            "Azure Search",
+            "Azure Stream Analytics",
+            "Azure Event Hub",
+            "Azure SQL Data Warehouse",
+            "PowerBI",
+            "Azure Data Factory",
+            "Azure Data Catalog",
+            "Logic Apps",
+            "Azure Data Share",
+            "Azure Databricks"
+        ],
+        "artificial_intelligence_and_machine_learning":[
+            "LUIS",
+            "Azure Bot Service",
+            "Azure Text Analytics",
+            "Speaker Recognition",
+            "Speech To Text",
+            "Speech Translation",
+            "Emotion API",
+            "Face API",
+            "Computer Vision",
+            "Azure Machine Learning",
+            "Azure Machine Learning Workbench",
+            "Azure Machine Learning Model Management",
+            "Azure Analysis Service",
+            "Azure Metrics Advisor",
+            "Personalize",
+            "Azure Cognitive Search"
+        ],
+        "mobile_services":[
+            "Azure Mobile Apps",
+            "Azure API Management",
+            "Azure Active Directory B2C",
+            "Azure Mobile Engagement",
+            "App Center Test",
+            "Azure Mobile SDK",
+            "Microsoft Flow",
+            "Logic Apps",
+            "Azure Functions",
+            "Event Grid",
+            "Azure App Service WebJobs",
+            "Visual Studio App Center"
+        ],
+        "automated_cloud_management_service0":[
+
+        ],
+        "application_services":[
+            "Azure API Management",
+            "Azure Media Services",
+            "Live On Demand Streaming",
+            "Content Protection",
+            "Media Analytics",
+            "Azure Web PubSub",
+            "Queue Storage",
+            "Service Bus",
+            "Mobile Engagement",
+            "Notification Hubs",
+            "Service Bus",
+            "Blockchain",
+            "Blockchain Workbench",
+            "Azure Blockchain Tokens",
+            "Azure Bot Service"
+        ],
+        "business_productivity":[
+            "Microsoft Office 365",
+            "Azure Communications Services"
+        ],
+        "software_marketPlace":[
+            "Azure MarketPlace"
+        ],
+        "internet_of_things":[
+            "Azure IoT Platform",
+            "Azure IoT Hub",
+            "Azure IoT SDK",
+            "Azure IoT Edge",
+            "Azure Sphere   "
+        ],
+        "game_development":[
+            "Visual Studio"
+        ],
+        "robotics_development":[
+
+        ],
+        "development_and_testing":[
+            "Azure Dev/Test"
+        ]
+    }
+}

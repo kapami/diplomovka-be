@@ -1,0 +1,90 @@
+{
+  "name": "Plagiarism Detection Architecture",
+  "description": "This architecture helps you create a plagiarism-detection service using AWS Step Functions, AWS Lambda, Amazon SageMaker, and OpenSearch Service.",
+  "url":  "https://docs.aws.amazon.com/architecture-diagrams/latest/plagiarism-detection-architecture/plagiarism-detection-architecture.html",
+  "provider": "aws",
+  "resources": [
+    {
+      "type": "user",
+      "id": "1",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon S3",
+      "type": "storage",
+      "id": "2",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+        "storage": ""
+      }
+    },
+    {
+      "name": "Amazon SageMaker",
+      "type": "artificial_intelligence_and_machine_learning",
+      "id": "6",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon OpenSearch Service",
+      "type": "opensearch",
+      "id": "7",
+      "zone": "none",
+      "region": "none",
+      "vpc": "vpc1",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "3",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "4",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "5",
+      "zone": "none",
+      "region": "none",
+      "vpc": "vpc1",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "8",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon EventBridge",
+      "type": "mobile_services",
+      "id": "9",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    }
+  ]
+}

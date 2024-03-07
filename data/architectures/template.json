@@ -1,0 +1,27 @@
+{
+  "name": "Plagiarism Detection Architecture",
+  "description": "This architecture helps you create a plagiarism-detection service using AWS Step Functions, AWS Lambda, Amazon SageMaker, and OpenSearch Service.",
+  "url":  "https://docs.aws.amazon.com/architecture-diagrams/latest/plagiarism-detection-architecture/plagiarism-detection-architecture.html",
+  "provider": "aws",
+  "resources ": [
+    {
+      "type": "user",
+      "id": "1",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties ": {}
+    },
+    {
+      "name": "Amazon S3",
+      "type": "storage",
+      "id": "2",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties ": {
+        "storage": ""
+      }
+    }
+  ]
+}

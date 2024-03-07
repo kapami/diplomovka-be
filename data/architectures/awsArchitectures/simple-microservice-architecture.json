@@ -1,0 +1,68 @@
+{
+  "name": "Simple microservices architecture",
+  "description": "Typical monolithic applications consist of different layers: a presentation layer, an application layer, and a data layer. Microservices architectures, on the other hand, separate functionalities into cohesive verticals according to specific domains, rather than technological layers. Figure 1 illustrates a reference architecture for a typical microservices application on AWS.",
+  "url": "https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/simple-microservices-architecture-on-aws.html",
+  "provider": "aws",
+  "resources": [
+    {
+      "name": "Amazon CloudFront",
+      "type": "networking_and_content_delivery",
+      "id": "1",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "Amazon S3",
+      "type": "storage",
+      "id": "2",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "Amazon ECS",
+      "type": "compute",
+      "id": "3",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "Amazon ElastiCache",
+      "type": "database",
+      "id": "4",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "Amazon Aurora",
+      "type": "database",
+      "id": "5",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "Amazon DynamoDB",
+      "type": "database",
+      "id": "6",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    }
+  ]
+}
