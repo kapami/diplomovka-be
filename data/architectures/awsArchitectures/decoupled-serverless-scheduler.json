@@ -1,0 +1,110 @@
+{
+  "name": "Decoupled Serverless Scheduler To Run HPC Applications At Scale on EC2",
+  "description": "Deploy a Decoupled Serverless Scheduler To Run Any HPC Application At Scale",
+  "url": "https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/decoupled_serverless_scheduler_ra.pdf?did=wp_card&trk=wp_card",
+  "provider": "aws",
+  "resources": [
+    {
+      "type": "users",
+      "id": "1",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon SQS",
+      "type": "application_services",
+      "id": "2",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "3",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Step Functions",
+      "type": "mobile_services",
+      "id": "4",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon CloudWatch",
+      "type": "management_tools",
+      "id": "5",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon EC2",
+      "type": "compute",
+      "id": "6",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon DynamoDB",
+      "type": "database",
+      "id": "7",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "8",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "9",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon S3",
+      "type": "storage",
+      "id": "10",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "Auto Scaling",
+      "type": "compute",
+      "id": "11",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    }
+  ]
+}

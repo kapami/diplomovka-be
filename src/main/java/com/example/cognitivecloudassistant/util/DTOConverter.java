@@ -1,23 +1,24 @@
 package com.example.cognitivecloudassistant.util;
 
-import com.example.cognitivecloudassistant.dto.PayloadItemDTO;
+import com.example.cognitivecloudassistant.dto.ResourceItemDTO;
 import com.example.cognitivecloudassistant.dto.ResponseItemDTO;
 
 public class DTOConverter {
 
-    public static ResponseItemDTO convertPayloadItemToResponseItem(PayloadItemDTO payloadItemDTO){
+    public static ResponseItemDTO convertPayloadItemToResponseItem(ResourceItemDTO resourceItemDTO){
         ResponseItemDTO responseItemDTO = new ResponseItemDTO();
 
-        responseItemDTO.setId(payloadItemDTO.getId());
-        responseItemDTO.setType(payloadItemDTO.getType());
-        responseItemDTO.setZone(payloadItemDTO.getZone());
-        responseItemDTO.setProvider(payloadItemDTO.getProvider());
-        responseItemDTO.setRegion(payloadItemDTO.getRegion());
-        responseItemDTO.setVpc(payloadItemDTO.getVpc());
-        responseItemDTO.setCurrency(payloadItemDTO.getCurrency());
-        responseItemDTO.setMeasurementType(payloadItemDTO.getMeasurementType());
-        responseItemDTO.setProperties(payloadItemDTO.getProperties());
-        responseItemDTO.setMetadata(payloadItemDTO.getMetadata());
+        responseItemDTO.setId(resourceItemDTO.getId());
+        responseItemDTO.setType(resourceItemDTO.getType());
+        responseItemDTO.setZone(resourceItemDTO.getZone());
+        responseItemDTO.setProvider(resourceItemDTO.getProvider());
+        responseItemDTO.setRegion(resourceItemDTO.getRegion());
+        responseItemDTO.setVpc(resourceItemDTO.getVpc());
+        responseItemDTO.setCurrency(resourceItemDTO.getCurrency());
+        responseItemDTO.setMeasurementType(resourceItemDTO.getMeasurementType());
+        responseItemDTO.setConnections(resourceItemDTO.getConnections());
+        responseItemDTO.setProperties(resourceItemDTO.getProperties());
+        responseItemDTO.setMetadata(resourceItemDTO.getMetadata());
 
         return responseItemDTO;
     }

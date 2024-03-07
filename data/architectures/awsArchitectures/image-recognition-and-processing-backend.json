@@ -1,0 +1,119 @@
+{
+  "name": "Serverless Reference Architecture: Image Recognition and Processing Backend",
+  "description": "The Image Recognition and Processing Backend demonstrates how to use AWS Step Functions to orchestrate a serverless processing workflow using AWS Lambda, Amazon S3, Amazon DynamoDB and Amazon Rekognition. This workflow processes photos uploaded to Amazon S3 and extracts metadata from the image such as geolocation, size/format, time, etc. It then uses image recognition to tag objects in the photo. In parallel, it also produces a thumbnail of the photo.",
+  "url": "https://github.com/aws-samples/lambda-refarch-imagerecognition",
+  "provider": "aws",
+  "resources": [
+    {
+      "type": "browser",
+      "id": "1",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon S3",
+      "type": "storage",
+      "id": "2",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+        "storage": ""
+      }
+    },
+    {
+      "name": "Amazon Amplify",
+      "type": "compute",
+      "id": "3",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "Amazon Cognito",
+      "type": "mobile_services",
+      "id": "4",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "5",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Step Functions",
+      "type": "mobile_services",
+      "id": "6",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "7",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "8",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon Rekognition",
+      "type": "artificial_intelligence_and_machine_learning",
+      "id": "9",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "10",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "11",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon DynamoDB",
+      "type": "database",
+      "id": "12",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    }
+  ]
+}

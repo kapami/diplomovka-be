@@ -1,0 +1,101 @@
+{
+  "name": "Real-time Fraud Detection Architecture (Enhanced)",
+  "description": "This enhanced architecture uses Amazon Kinesis Data Streams, AWS Lambda, Amazon DynamoDB, Amazon SNS, and Amazon SQS to detect fraudulent activities in real-time. Additionally, it sends alerts about detected fraud through Amazon SNS and provides flexibility for handling failures and retries using SQS.",
+  "url": "https://aws.amazon.com/blogs/machine-learning/build-and-visualize-a-real-time-fraud-prevention-system-using-amazon-fraud-detector/",
+  "provider": "aws",
+  "resources": [
+    {
+      "name": "Amazon EventBridge",
+      "type": "mobile_services",
+      "id": "1",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "2",
+      "zone": "none",
+      "region": "none",
+      "vpc": "vpc1",
+      "properties": {
+      }
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "3",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "Amazon SNS",
+      "type": "application_services",
+      "id": "4",
+      "zone": "none",
+      "region": "none",
+      "vpc": "vpc1",
+      "properties": {
+      }
+    },
+    {
+      "name": "Amazon Fraud Detector",
+      "type": "artificial_intelligence_and_machine_learning",
+      "id": "5",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon OpenSearch Service",
+      "type": "opensearch",
+      "id": "6",
+      "zone": "none",
+      "region": "none",
+      "vpc": "vpc2",
+      "properties": {}
+    },
+    {
+      "name": "Amazon MSK Connect",
+      "type": "msk-connect",
+      "id": "7",
+      "zone": "none",
+      "region": "none",
+      "vpc": "vpc2",
+      "properties": {}
+    },
+    {
+      "name": "Amazon MSK",
+      "type": "msk",
+      "id": "8",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon MSK",
+      "type": "msk",
+      "id": "9",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon Kynesis Data Analytics",
+      "type": "kynesis-data-analytics",
+      "id": "10",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    }
+  ]
+}

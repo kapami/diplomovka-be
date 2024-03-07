@@ -1,7 +1,8 @@
 package com.example.cognitivecloudassistant.service;
 
+import com.example.cognitivecloudassistant.dto.ArchitectureDTO;
 import com.example.cognitivecloudassistant.dto.PayloadDTO;
-import com.example.cognitivecloudassistant.dto.PayloadItemDTO;
+import com.example.cognitivecloudassistant.dto.ResourceItemDTO;
 import com.example.cognitivecloudassistant.dto.ResponseItemDTO;
 import com.example.cognitivecloudassistant.exception.UnrecognizedCloudProviderException;
 import com.example.cognitivecloudassistant.util.DTOConverter;
@@ -25,8 +26,8 @@ public class CostCalculationService {
         List<ResponseItemDTO> responseList = new ArrayList<>();
         ResponseItemDTO responseItemDTO;
 
-        for(PayloadItemDTO payloadItemDTO : payloadRootDTO.getResources()){
-            responseItemDTO = DTOConverter.convertPayloadItemToResponseItem(payloadItemDTO);
+        for(ResourceItemDTO resourceItemDTO : payloadRootDTO.getResources()){
+            responseItemDTO = DTOConverter.convertPayloadItemToResponseItem(resourceItemDTO);
             switch (responseItemDTO.getProvider().toUpperCase()) {
                 case "AWS":
                     awsCostCalculationService.calculateCosts(responseItemDTO);
@@ -41,5 +42,21 @@ public class CostCalculationService {
         }
 
         return responseList;
+    }
+
+    public void calculateCosts(List<ArchitectureDTO> architectures){
+        for(ArchitectureDTO architecture : architectures){
+            switch (architecture.getProvider().toUpperCase()){
+                case "AWS":
+                    awsCostCalculationService.calculateArchitectureCost(architecture);
+                    break;
+                case "AZURE":
+                    azureCostCalculationService.calculateArchitectureCost(architecture);
+                    break;
+                default:
+                    throw new UnrecognizedCloudProviderException(architecture.getProvider() + "cloud provider is not supported");
+            }
+        }
+
     }
 }

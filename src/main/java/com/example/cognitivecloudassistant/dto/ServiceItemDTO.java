@@ -1,6 +1,9 @@
 package com.example.cognitivecloudassistant.dto;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 import java.util.Map;
 
@@ -8,15 +11,14 @@ import java.util.Map;
 @Setter
 @ToString
 @NoArgsConstructor
-public class PayloadItemDTO {
-    public @NonNull String type;
+public class ServiceItemDTO {
+    public String name;
+    public String type;
     public String id;
     public String zone;
-    public @NonNull String provider;
     public String region;
     public String vpc;
-    public String currency;
+    public String price;
     public String measurementType;
     public Map<String, Object> properties;
-    public Map<String, Object> metadata;
 }

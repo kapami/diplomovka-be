@@ -11,5 +11,5 @@ import java.util.List;
 public class PayloadDTO {
 
     public @NonNull String description; // description of architecture
-    public @NonNull List<PayloadItemDTO> resources;
+    public @NonNull List<ResourceItemDTO> resources;
 }

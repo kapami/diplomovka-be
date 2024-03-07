@@ -1,0 +1,90 @@
+{
+  "name": "Serverless Batch Processing Architecture",
+  "description": "This architecture uses Amazon S3, AWS Step Functions, AWS Lambda, and Amazon ECS to process large datasets in a serverless manner. Additionally, it uses Amazon DynamoDB to store processing results and Amazon SNS to send notifications about job completion.",
+  "url": "https://aws.amazon.com/blogs/compute/creating-aws-serverless-batch-processing-architectures/",
+  "provider": "aws",
+  "resources": [
+    {
+      "type": "user",
+      "id": "1",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon S3",
+      "type": "storage",
+      "id": "2",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon S3",
+      "type": "storage",
+      "id": "3",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon S3",
+      "type": "storage",
+      "id": "4",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Step Functions",
+      "type": "mobile_services",
+      "id": "5",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Step Functions",
+      "type": "mobile_services",
+      "id": "6",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "AWS Lambda",
+      "type": "compute",
+      "id": "7",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {}
+    },
+    {
+      "name": "Amazon DynamoDB",
+      "type": "database",
+      "id": "8",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    },
+    {
+      "name": "Amazon SES",
+      "type": "application_services",
+      "id": "9",
+      "zone": "none",
+      "region": "none",
+      "vpc": "none",
+      "properties": {
+      }
+    }
+  ]
+}
